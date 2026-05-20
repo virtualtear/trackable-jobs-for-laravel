@@ -2,6 +2,13 @@
 
 All relevant changes in `mateusjunges/laravel-trackable-jobs` will be documented here.
 
+### [v3.0.0 (2026-05-20)](https://github.com/mateusjunges/trackable-jobs-for-laravel/compare/v2.2.0...v3.0.0)
+- Add support for Laravel 13 by [@mateusjunges](https://github.com/mateusjunges) in [#67](https://github.com/mateusjunges/trackable-jobs-for-laravel/pull/67).
+- Drop support for Laravel 11 (the package now supports Laravel 12 and 13).
+- Drop support for PHP 8.2 (PHP 8.3 is now the minimum required version).
+- Fix the retrying status not being tracked when a job is released back to the queue.
+- `TrackableJob` now uses the `InteractsWithQueue` trait, so jobs that extend it no longer need to add it manually.
+
 ### [v2.2.0 (2025-08-29)](https://github.com/mateusjunges/trackable-jobs-for-laravel/compare/v2.1.2...v2.2.0)
 - Tracks queue where the job has been queued by [@mateusjunges](https://github.com/mateusjunges) in [#65](https://github.com/mateusjunges/trackable-jobs-for-laravel/pull/65)
 
